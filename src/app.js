@@ -55,7 +55,38 @@ let big1 = 2934857902347590347590n;
 let big2 = 268435457n;
 let big3 = 0x2000000000003n;
 let big4 = 274877906947n;
+// strings
+// aspas simples
+let nomecompleto = 'Luis Felipe';
+// aspas duplas
+let funcaoEmpresa = "Operador de telemarketing";
+// aspa crazeada
+let nomeEmpresa = `NEOBPO`, dadosFuncionario = `Seja bem vindo ${nomecompleto} voce sera ${funcaoEmpresa}  na empresa ${nomeEmpresa}`;
+// Arrays
+let frutas = ['abacaxi', 'maca', 'laranja', 'melancia', 'manga'];
+console.log(frutas[0]);
+let frutas1 = ['abacaxi', 'maca', 'laranja', 'melancia', 'manga'];
+console.log(frutas1[1]);
+let idiomas = ['portugues', 'ingles', 'espanhol', 'frances'];
+console.log(idiomas);
+idiomas.push('mandarim');
+console.log(idiomas);
+let idiomas1 = ['portugues', 'ingles', 'espanhol', 'frances'];
+console.log(idiomas1.length);
+let num = [0, 1, 2, 3, 4, 5];
+num = [...num, 6, 7, 8, 9, 10];
+console.log(num);
+let linguagens = new Array('javascript', 'html', 'css', 'typescript');
+function funcaoLinguagens(Linguagens) {
+    for (let i = 0; i < Linguagens.length; i++) {
+        console.log(linguagens[i]);
+    }
+}
+funcaoLinguagens(linguagens);
 //consoles
+console.log(dadosFuncionario);
+console.log(nomecompleto);
+console.log(funcaoEmpresa);
 console.log(numbers(1, 5));
 console.log(message);
 console.log(mult(2, 5));

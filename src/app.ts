@@ -70,8 +70,56 @@ let big2: bigint = 0b10000000000000000000000000001n;
 let big3: bigint = 0x2000000000003n;
 let big4: bigint = 0o4000000000003n;
 
+// strings
+// aspas simples
 
+let nomecompleto: string = 'Luis Felipe'
+
+// aspas duplas
+
+let funcaoEmpresa: string = "Operador de telemarketing"
+
+// aspa crazeada
+
+let nomeEmpresa: string =  `NEOBPO`,
+    dadosFuncionario: string = `Seja bem vindo ${nomecompleto} voce sera ${funcaoEmpresa}  na empresa ${nomeEmpresa}`
+
+// Arrays
+
+let frutas: string[] = ['abacaxi', 'maca', 'laranja', 'melancia', 'manga']
+console.log(frutas[0])
+
+let frutas1: Array<string> = ['abacaxi', 'maca', 'laranja', 'melancia', 'manga']
+console.log(frutas1[1])
+
+
+let idiomas: Array<string> = ['portugues', 'ingles', 'espanhol', 'frances'];
+console.log(idiomas);
+
+idiomas.push('mandarim');
+console.log(idiomas)
+
+let idiomas1: Array<string> = ['portugues', 'ingles', 'espanhol', 'frances'];
+console.log(idiomas1.length)
+
+let num = [0, 1, 2, 3, 4, 5];
+num = [...num, 6, 7, 8, 9, 10]
+
+console.log(num)
+
+let linguagens: string[] = new Array('javascript', 'html', 'css', 'typescript');
+function funcaoLinguagens(Linguagens: string[]) {
+    for (let i = 0; i < Linguagens.length; i++) {
+        console.log(linguagens[i])
+    }
+}
+
+funcaoLinguagens(linguagens)
 //consoles
+console.log(dadosFuncionario)
+console.log(nomecompleto)
+console.log(funcaoEmpresa)
+
 console.log(numbers(1, 5));
 
 console.log(message);
