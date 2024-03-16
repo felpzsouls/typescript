@@ -39,10 +39,10 @@ let tarefaConcluida = true;
 let tarefaPendente = false;
 let concluido = false;
 if (concluido) {
-    console.log('tarefa concluida');
+    // console.log('tarefa concluida')
 }
 else {
-    console.log('tarefa pendente');
+    // console.log('tarefa pendente')
 }
 ;
 // => number
@@ -64,30 +64,43 @@ let funcaoEmpresa = "Operador de telemarketing";
 let nomeEmpresa = `NEOBPO`, dadosFuncionario = `Seja bem vindo ${nomecompleto} voce sera ${funcaoEmpresa}  na empresa ${nomeEmpresa}`;
 // Arrays
 let frutas = ['abacaxi', 'maca', 'laranja', 'melancia', 'manga'];
-console.log(frutas[0]);
+//  console.log(frutas[0])
 let frutas1 = ['abacaxi', 'maca', 'laranja', 'melancia', 'manga'];
-console.log(frutas1[1]);
+// console.log(frutas1[1])
 let idiomas = ['portugues', 'ingles', 'espanhol', 'frances'];
-console.log(idiomas);
+// console.log(idiomas);
 idiomas.push('mandarim');
-console.log(idiomas);
+// console.log(idiomas)
 let idiomas1 = ['portugues', 'ingles', 'espanhol', 'frances'];
-console.log(idiomas1.length);
+// console.log(idiomas1.length)
 let num = [0, 1, 2, 3, 4, 5];
 num = [...num, 6, 7, 8, 9, 10];
-console.log(num);
+// console.log(num)
 let linguagens = new Array('javascript', 'html', 'css', 'typescript');
 function funcaoLinguagens(Linguagens) {
     for (let i = 0; i < Linguagens.length; i++) {
-        console.log(linguagens[i]);
+        // console.log(linguagens[i])
     }
 }
 funcaoLinguagens(linguagens);
+// tuplas 
+// => simple tupla
+let pessoa;
+pessoa = ['Felpz', 'dev', 18];
+console.log(pessoa[1]);
+// => label tupla
+let pessoa2 = ['felpz', 'dev', 18];
+console.log(pessoa2);
+// => spreed operator(...) tupla
+let listafrustas = ['abacaxi', 'maca', 'uva', 'melancia'];
+console.log(...listafrustas);
 //consoles
-console.log(dadosFuncionario);
-console.log(nomecompleto);
-console.log(funcaoEmpresa);
+/* console.log(dadosFuncionario)
+console.log(nomecompleto)
+console.log(funcaoEmpresa)
+
 console.log(numbers(1, 5));
+
 console.log(message);
 console.log(mult(2, 5));
 console.log(carro);
@@ -96,17 +109,19 @@ console.log(nome);
 console.log(calc(1, 3));
 console.log(tarefaConcluida);
 console.log(tarefaPendente);
+
 console.log('number - ponto flutuante:', num1);
 console.log('number - hexadecimal:', num2);
-console.log(typeof (num2));
+console.log(typeof(num2));
 console.log('number - octal:', num3);
-console.log(typeof (num3));
+console.log(typeof(num3));
 console.log('number - binario:', num4);
-console.log(typeof (num4));
+console.log(typeof(num4));
+
 console.log('number - ponto flutuante:', big1);
 console.log('number - hexadecimal:', big2);
-console.log(typeof (big2));
+console.log(typeof(big2));
 console.log('number - octal:', big3);
-console.log(typeof (big3));
+console.log(typeof(big3));
 console.log('number - binario:', big4);
-console.log(typeof (big4));
+console.log(typeof(big4)); */ 

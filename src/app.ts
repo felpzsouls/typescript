@@ -52,9 +52,9 @@ let tarefaPendente: boolean = false;
 let concluido: boolean = false;
 
 if (concluido) {
-    console.log('tarefa concluida')
+    // console.log('tarefa concluida')
 } else {
-    console.log('tarefa pendente')
+    // console.log('tarefa pendente')
 };
 
 // => number
@@ -87,36 +87,56 @@ let nomeEmpresa: string =  `NEOBPO`,
 // Arrays
 
 let frutas: string[] = ['abacaxi', 'maca', 'laranja', 'melancia', 'manga']
-console.log(frutas[0])
+//  console.log(frutas[0])
 
 let frutas1: Array<string> = ['abacaxi', 'maca', 'laranja', 'melancia', 'manga']
-console.log(frutas1[1])
+// console.log(frutas1[1])
 
 
 let idiomas: Array<string> = ['portugues', 'ingles', 'espanhol', 'frances'];
-console.log(idiomas);
+// console.log(idiomas);
 
 idiomas.push('mandarim');
-console.log(idiomas)
+// console.log(idiomas)
 
 let idiomas1: Array<string> = ['portugues', 'ingles', 'espanhol', 'frances'];
-console.log(idiomas1.length)
+// console.log(idiomas1.length)
 
 let num = [0, 1, 2, 3, 4, 5];
 num = [...num, 6, 7, 8, 9, 10]
 
-console.log(num)
+// console.log(num)
 
 let linguagens: string[] = new Array('javascript', 'html', 'css', 'typescript');
 function funcaoLinguagens(Linguagens: string[]) {
     for (let i = 0; i < Linguagens.length; i++) {
-        console.log(linguagens[i])
+        // console.log(linguagens[i])
     }
 }
 
 funcaoLinguagens(linguagens)
+
+// tuplas 
+
+// => simple tupla
+
+let pessoa: [string, string, number];
+
+pessoa = ['Felpz', 'dev', 18]
+
+console.log(pessoa[1])
+
+// => label tupla
+
+let pessoa2: [nome: string, posicao: string, idade: number] =  ['felpz', 'dev', 18];
+console.log(pessoa2);
+
+// => spreed operator(...) tupla
+let listafrustas: [string, ...string[]] = ['abacaxi', 'maca', 'uva', 'melancia'];
+console.log(...listafrustas);
+
 //consoles
-console.log(dadosFuncionario)
+/* console.log(dadosFuncionario)
 console.log(nomecompleto)
 console.log(funcaoEmpresa)
 
@@ -145,4 +165,4 @@ console.log(typeof(big2));
 console.log('number - octal:', big3);
 console.log(typeof(big3));
 console.log('number - binario:', big4);
-console.log(typeof(big4));
+console.log(typeof(big4)); */
